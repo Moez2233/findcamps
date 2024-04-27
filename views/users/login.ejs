@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <% layout('layouts/boilerplate') %>
+
+    <h1> Login </h1>
+    <form action="/login" method="POST" class="validated-form" novalidate>
+
+        <div class="mb-3">
+            <label class="form-label" for="username">username</label>
+            <input  class="form-control" type="text" id="username" name="username" required>
+            
+            <div class="valid-feedback">
+                Looks good!
+             </div>
+        </div>
+
+       
+
+        <div class="mb-3">
+            <label class="form-label" for="password">password</label>
+            <input  class="form-control" type="password" id="password" name="password" required>
+            
+            <div class="valid-feedback">
+                Looks good!
+             </div>
+        </div>
+        <button class="btn btn-success"> Login</button>
+
+    </form>
+
+</body>
+</html>
