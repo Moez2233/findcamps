@@ -9,6 +9,7 @@ const {campgroundSchema, reviewSchema} = require('./schemas.js')
 const catchAsync = require('./utils/catchAsync');
 const ExpressError = require('./utils/ExpressError');
 const methodOverride = require('method-override');
+// this is comment
 
 const Campground = require('./models/campground');
 const Review = require('./models/review');
